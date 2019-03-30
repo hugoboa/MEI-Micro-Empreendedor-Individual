@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-icon class="iconSize"  slot="start" name="arrow-back" color="light"  onclick="history.go(-1)"></ion-icon>
+      <ion-title text-center>Login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding >
+    <h1>MEI - LOGIN</h1>
+    <h6>Acesso ao app</h6>
+    <ion-grid>
+      <ion-row class="inputStyle">
+        <ion-icon name="mail"></ion-icon>
+        <ion-input type="email" color="light"></ion-input>
+      </ion-row>
+      <ion-row class="inputStyle">
+        <ion-icon name="key" color="white"></ion-icon>
+        <ion-input type="password" color="light"></ion-input>
+      </ion-row>
+    </ion-grid>
+    <ion-button  class="inputStyle" style="margin-top: 20px"
+      expand="block"
+      shape="round" 
+      (click)="entrar()"> 
+    Entrar
+    </ion-button >
+    
+  </ion-content>
